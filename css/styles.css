@@ -123,9 +123,8 @@ nav {
   margin: 0 auto;
   padding: var(--spacing-medium);
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-small);
-  justify-content: center;
+  align-items: stretch;
+  gap: var(--spacing-medium);
 }
 
 nav a {
@@ -135,6 +134,7 @@ nav a {
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
   transition: background-color 0.2s ease;
+  text-align: center;
 }
 
 nav a:hover {
@@ -147,11 +147,20 @@ nav a:focus {
   outline-offset: 2px;
 }
 
+/* Menu container with 2-column grid */
+.nav-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  align-content: center;
+  flex: 1;
+}
+
 /* Logo in navigation */
 .nav-logo {
-  height: 65px;
+  height: auto;
+  max-height: 80px;
   width: auto;
-  margin-right: var(--spacing-medium);
   display: block;
 }
 
@@ -394,7 +403,6 @@ footer a:hover {
   }
   
   nav {
-    justify-content: flex-start;
     padding: var(--spacing-medium) var(--spacing-large);
   }
   
@@ -403,8 +411,11 @@ footer a:hover {
   }
   
   .nav-logo {
-    height: 75px;
-    margin-right: var(--spacing-large);
+    max-height: 90px;
+  }
+  
+  .nav-menu {
+    gap: 0.75rem;
   }
   
   .treatment-card {
