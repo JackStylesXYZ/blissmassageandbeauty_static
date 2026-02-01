@@ -147,6 +147,14 @@ nav a:focus {
   outline-offset: 2px;
 }
 
+/* Logo in navigation */
+.nav-logo {
+  height: 40px;
+  width: auto;
+  margin-right: var(--spacing-medium);
+  display: block;
+}
+
 /* ===================================
    Sections
    =================================== */
@@ -392,6 +400,11 @@ footer a:hover {
   
   nav a {
     font-size: 1rem;
+  }
+  
+  .nav-logo {
+    height: 45px;
+    margin-right: var(--spacing-large);
   }
   
   .treatment-card {
