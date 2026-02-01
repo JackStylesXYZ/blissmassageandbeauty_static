@@ -159,7 +159,7 @@ nav a:focus {
 /* Logo in navigation */
 .nav-logo {
   height: auto;
-  max-height: 80px;
+  max-height: 120px;
   width: auto;
   display: block;
 }
@@ -411,7 +411,7 @@ footer a:hover {
   }
   
   .nav-logo {
-    max-height: 90px;
+    max-height: 140px;
   }
   
   .nav-menu {
