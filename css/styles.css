@@ -149,7 +149,7 @@ nav a:focus {
 
 /* Logo in navigation */
 .nav-logo {
-  height: 40px;
+  height: 65px;
   width: auto;
   margin-right: var(--spacing-medium);
   display: block;
@@ -403,7 +403,7 @@ footer a:hover {
   }
   
   .nav-logo {
-    height: 45px;
+    height: 75px;
     margin-right: var(--spacing-large);
   }
   
