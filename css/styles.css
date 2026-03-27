@@ -154,15 +154,6 @@ nav a:focus {
   gap: 0.5rem;
   align-content: center;
   flex: 1;
-  margin-left: var(--spacing-medium);
-}
-
-/* Logo in navigation */
-.nav-logo {
-  height: auto;
-  max-height: 120px;
-  width: auto;
-  display: block;
 }
 
 /* Hamburger button - hidden on desktop */
@@ -400,6 +391,9 @@ footer a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  /* Prevent flex row from stretching links to full footer width */
+  flex: 0 0 auto;
+  line-height: 0;
   transition: opacity 0.2s ease;
 }
 
@@ -408,8 +402,10 @@ footer a:hover {
 }
 
 .social-icon {
-  width: 28px;
-  height: 28px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
   color: var(--color-text-light);
 }
 
@@ -428,12 +424,6 @@ footer a:hover {
   nav {
     flex-wrap: wrap;
     position: relative;
-  }
-  
-  /* Logo takes natural space */
-  .nav-logo {
-    flex: 0 0 auto;
-    max-height: 70px;
   }
   
   /* Hide menu by default on mobile */
@@ -520,10 +510,6 @@ footer a:hover {
   
   nav a {
     font-size: 1rem;
-  }
-  
-  .nav-logo {
-    max-height: 140px;
   }
   
   .nav-menu {
